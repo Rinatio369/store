@@ -1533,3 +1533,255 @@ body{
     font-size: 11px;
   }
 }
+
+.footer{
+  margin-top: 200px;
+  padding: 62px 387px 40px 375px;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+}
+
+.cols{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1155px;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.use{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+
+}
+
+.col1__images{
+  display: flex;
+  flex-direction: row;
+}
+
+.col1__image1{
+  background-image: url(../images/backgrounds/logo.png  );
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+}
+
+.col1__image2{
+  background-image: url(../images/backgrounds/kiwi-fruit-apple.png);
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+}
+
+.col3{
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.footer .logo__text{
+  width: auto;
+  height: auto;
+  font-size: 30px !important;
+  color: white;
+}
+
+.col4{
+  margin-left: 60px;
+}
+
+.col4__app{
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  height: 16px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.col4__images{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.col4__image1{
+  background-image: url(../images/backgrounds/appstore.png);
+  width: 212px;
+  height: 63px;
+  background-size: 212px 63px;
+}
+
+.col4__image2{
+  background-image: url(../images/backgrounds/googleplay.png);
+  width: 212px;
+  height: 63px;
+  background-size: 212px 63px;
+}
+
+.sub__text{
+  margin-top: 40px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+.sub__inp{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sub__input{
+  outline: none;
+  border: none;
+  padding: 25px 118px 26px 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #757575;
+}
+
+.sub__btn{
+  width: 173px;
+  height: 70px;
+  background-color: #7FAD39;
+  outline: none;
+  border: none;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.col4__pay{
+  margin-top: 40px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+.pay__types{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pay__type:nth-child(1){
+  width: 43px;
+  height: 25px;
+  background-image: url(../images/icons/Visa-light.svg);
+  background-size: 43px 25px;
+}
+
+.pay__type:nth-child(2){
+  width: 43px;
+  height: 25px;
+  background-image: url(../images/icons/MasterCard-light.svg);
+  background-size: 43px 25px;
+}
+
+.pay__type:nth-child(3){
+  width: 43px;
+  height: 25px;
+  background-image: url(../images/icons/Maestro-light.svg);
+  background-size: 43px 25px;
+}
+
+.pay__type:nth-child(4){
+  width: 43px;
+  height: 25px;
+  background-image: url(../images/icons/Cirrus-light.svg);
+  background-size: 43px 25px;
+}
+
+.pay__type:nth-child(5){
+  width: 43px;
+  height: 25px;
+  background-image: url(../images/icons/AmericanExpress-light.svg);
+  background-size: 43px 25px;
+}
+
+.copy{
+  margin-top: 105px;
+}
+
+.copy span{
+  font-weight: 800;
+}
+
+@media(max-width: 1500px) {
+  .footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .cols{
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin: 0px 5px;
+  }
+
+  .col4{
+    margin-left: 0px;
+  }
+}
+
+@media(max-width: 900px) {
+  .sub__input{
+    padding: 2px 0px 2px 5px;
+  }
+
+  .col4__app{
+    width: auto;
+  }
+
+  .sub__btn{
+    height: 40px;
+    width: 80px;
+  }
+
+  .col4__image1, .col4__image2{
+    width: 106px;
+    height: 32px;
+    background-size: 106px 32px;
+  }
+
+  .copy{
+    text-align: center;
+    width: 300px;
+    overflow-wrap: normal;
+  }
+}
