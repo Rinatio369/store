@@ -12,7 +12,7 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="grey">
+      <section class="grey">
         <div class="info">
           <div class="mail">
             <div class="mail__icon"></div>
@@ -27,8 +27,8 @@
             <li class="media__icon twitter"><a href="#"></a></li>
           </ul>
         </div>
-      </div>
-      <div class="bar">
+      </section>
+      <section class="bar">
         <div class="logo">
           <div class="logo__text">logo</div>
           <div class="logo__image"></div>
@@ -55,21 +55,51 @@
           </div>
           <div class="split spl2"></div>
             <div class="user__wrapper">
-              <div class="user dropdown-toggle" type="button" data-toggle="dropdown">
+              <div class="user dropdown-toggle" data-toggle="dropdown">
                 <div class="user__icon"></div>
                 <div class="user__name">John Doe</div>
+                <span class="caret"></span>
               </div>
-              <span class="caret"></span>
               <ul class="dropdown-menu">
                 <li><a href="#"></a></li>
               </ul>
             </div>
+        </section>
+  
+        <section class="navigation">
+          <div class="navigation__wrapper">
+          <div class="navigation-dropdown dropdown-toggle" data-toggle="dropdown">
+            <div class="navigation-caret burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="navigation-text">Select Categories</div>
           </div>
+          <ul class="dropdown-menu">
+            <li><a href="#"></a></li>
+          </ul>
         </div>
-      <nav class="nav">
-      </nav>
+        <nav class="navigation__pages">
+          <ul class="pages__list">
+            <li class="pages__item page-active">HOME</li>
+            <li class="pages__item"><a href="">Product</a></li>
+            <li class="pages__item"><a href="">Stores</a></li>
+            <li class="pages__item"><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="card__wrapper">
+          <div class="card-dropdown dropdown-toggle" data-toggle="dropdown">
+            <div class="card__icon"></div>
+            <div class="card__text">CART <span>2</span></div>
+            <div class="caret-white"></div>
+          </div>
+            <ul class="dropdown-menu">
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+      </section>
     </header>
-
     <main class="main">
       <section class="string">
         <div class="items-wrap">
@@ -167,19 +197,13 @@
               <div class="shop-now">shop now </div>
             </div>
         </div>
-        
+      </div>
       </section>
+      
       <section class="category">
         <span class="head__small-text">Shop by</span>
         <h2 class="head__big-text">Categories</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-          </ol>
-      
-          <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
       
             <div class="item active">
@@ -211,58 +235,444 @@
                 </a></li>
               </ul>
             </div>
-      
-            <div class="item">
-              <ul class="block-list">
-                <li class="block-item"><a href="#">
-                  <div class="block-image block-bev"></div>
-                  <div class="block-text">Beverages</div>
-                </a></li>
-                <li class="block-item"><a href="#">
-                  <div class="block-image block-gro"></div>
-                  <div class="block-text">Grocery & Staples</div>
-                </a></li>
-                <li class="block-item"><a href="#">
-                  <div class="block-image block-dai"></div>
-                  <div class="block-text">Dairy & Eggs</div>
-                </a></li>
-                <li class="block-item"><a href="#">
-                  <div class="block-image block-veg"></div>
-                  <div class="block-text">Vegetables & Fruits</div>
-                </a></li>
-                <li class="block-item"><a href="#">
-                  <div class="block-image block-sna"></div>
-                  <div class="block-text">Snacks</div>
-                </a>
-                </li>
-                <li class="block-item"><a href="#">
-                  <div class="block-image block-home"></div>
-                  <div class="block-text">Home Care</div>
-                </a></li>
-              </ul>
-            </div>
-        
           </div>
       
-          <!-- Left and right controls -->
-          <a class="right category__right category__right-one" href="#myCarousel" role="button" data-slide="next">
+
+          <div class="right category__right category__right-one"  data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-          </a>
-          <a class="right category__right category__right-two" href="#myCarousel" role="button" data-slide="next">
+          </div>
+          <div class="right category__right category__right-two" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-          </a>
+          </div>
         </div>
       </section>
-      <section>
-        
+      <section class="foryou">
+        <span class="head__small-text">For you</span>
+        <h2 class="head__big-text">Top Featured Products</h2>
+        <div class="foryou__slider">
+            <div class="foryou__list">
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image abricot"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Fresh organic apricot</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image cucumber"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Cucumber</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image nut"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Hazelnuts filbert nut</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image broccoli"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Raw broccoli</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image quince"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Organic quince</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+              <div class="right foryou__rigth foryou__rigth-one" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </div>
+              <div class="right foryou__rigth foryou__rigth-two" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </div>
+            </div>
+        </div>
       </section>
+      <section class="offers">
+        <span class="head__small-text">Offers</span>
+        <h2 class="head__big-text">Best Values</h2>
+        <div class="offers-top">
+          <div class="offers-top__list">
+            <div class="offers-top__item">
+              <h3 class="offers-top__header">Daily Essentials</h3>
+              <div class="offers-top__text">20% off Everyday</div>
+              <div class="offers-top__btn">SHOP NOW</div>
+            </div>
+            <div class="offers-top__item">
+              <h3 class="offers-top__header">GET UP TO</h3>
+              <div class="offers-top__text">30% OFF</div>
+              <div class="offers-top__btn">SHOP NOW</div>
+            </div>
+            <div class="offers-top__item">
+              <h3 class="offers-top__header">Special Discount</h3>
+              <div class="offers-top__text">for All Items</div>
+              <div class="offers-top__btn">SHOP NOW</div>
+            </div>
+          </div>
+        </div>
+        <div class="offers-bottom">
+          <div class="offers-bottom__dark"></div>
+          <div class="offers-bottom__text">Get $5 Cashback! Min Order of $50</div>
+          <div class="offers-bottom__code">USE CODE :  COMBOSUPERR2a</div>
+        </div>
+      </section>
+      <section class="foryou">
+        <span class="head__small-text">For you</span>
+        <h2 class="head__big-text">Top Featured Products</h2>
+        <div class="foryou__slider">
+            <div class="foryou__list">
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image red-apple"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Red apple</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image capsicum"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Capsicum-green</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image pear"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Pear fruit</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image blueberry"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Blueberry</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image raspberry"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Fresh raspberry</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+              <div class="right foryou__rigth foryou__rigth-one" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </div>
+              <div class="right foryou__rigth foryou__rigth-two" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="foryou">
+        <span class="head__small-text">For you</span>
+        <h2 class="head__big-text">Added new Products</h2>
+        <div class="foryou__slider">
+            <div class="foryou__list">
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image ginger"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Ginger</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image figs"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Two fresh figs</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image strawberry"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Strawberry</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image eggplant"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Eggplant</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+
+              <div class="foryou__item">
+                <a href="" class="foryou__like"></a>
+                <div class="foryou__procent">15%Off</div>
+                <div class="foryou__image egg"></div>
+                <div class="foryou__text">
+                  <div class="foryou__grey-text">Available(in stock)</div>
+                  <div class="foryou__main-text">Egg</div>
+                </div>
+                <div class="foryou__price">$12 <span>$15</span></div>
+                <div class="foryou__bottom">
+                  <div class="foryou__counter">
+                    <div class="foryou__minus"><div class="foryou__icon"></div></div>
+                    <div class="foryou__count">1</div>
+                    <div class="foryou__plus"><div class="foryou__icon"></div></div>
+                  </div>
+                  <div class="foryou__card"></div>
+                </div>
+              </div>
+              <div class="right foryou__rigth foryou__rigth-one" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </div>
+              <div class="right foryou__rigth foryou__rigth-two" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </div>
+            </div>
+        </div>
+    </section>
     </main>
+
+    <footer class="footer">
+      <div class="cols">
+        <div class="col1">
+          <div class="footer__logo logo__text">LOGO</div>
+          <div class="col1__images">
+            <div class="col1__image1"></div>
+            <div class="col1__image2"></div>
+          </div>
+          <div class="col1__contacts">
+            Address: 60-49 Road 11378 New York<br>
+            Phone: +65 11.188.888<br>
+            Email: hello@colorlib.com</div>
+        </div>
+        <div class="col2">
+          <h4 class="use">Useful link</h4>
+          <ul class="col2__list">
+            <li class="col2__item"><a href="">About Us</a></li>
+            <li class="col2__item"><a href="">About Our Shop</a></li>
+            <li class="col2__item"><a href="">Delivery infomation</a></li>
+            <li class="col2__item"><a href="">Privacy Policy</a></li>
+            <li class="col2__item"><a href="">Our Sitemap</a></li>
+          </ul>
+        </div>
+        <div class="col3">
+          <ul class="col3__list">
+            <li class="col3__item"><a href="">Home</a></li>
+            <li class="col3__item"><a href="">Product</a></li>
+            <li class="col3__item"><a href="">Contact</a></li>
+            <li class="col3__item"><a href="">Stores</a></li>
+          </ul>
+        </div>
+        <div class="col4">
+          <div class="col4__app">
+            Download App
+          </div>
+          <div class="col4__images">
+            <div class="col4__image1"></div>
+            <div class="col4__image2"></div>
+          </div>
+          <div class="col4__sub">
+            <div class="sub__text">Sign Up for Our Newsletter</div>
+            <div class="sub__inp">
+              <input type="text" class="sub__input" placeholder="enter email address">
+              <button class="sub__btn">SUBSCRIBE</button>
+            </div>
+            <div class="col4__pay">
+              <div class="pay__text">Payment Method</div>
+              <div class="pay__types">
+                <div class="pay__type"></div>
+                <div class="pay__type"></div>
+                <div class="pay__type"></div>
+                <div class="pay__type"></div>
+                <div class="pay__type"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy">Copyright ©2021 All rights reserved | This template is made with 💚 by <span>logo</span></div>
+    </footer>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 </body>
 </html>
